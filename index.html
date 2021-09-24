@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+
+	  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<!-- CSS -->
+	  	<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="body">
+			<div class="burger">
+				<div class="burger__body">
+					<div class="burger__burger">
+						
+					</div>
+					<div class="icon">
+						<img class="img__logo-min" src="img/logoyellow.png">
+						<div class="logo-min">
+							<div>FindHome</div>
+						</div>
+					</div>
+
+					<div class="burger__menu">
+						<img class="img__logo-max" src="img/logoyellow.png">
+						<div class="menu__block">
+							<div class="logo-max">
+								<div>FindHome</div>
+							</div>
+							<div class="title__block">
+								<div class="title__menu">
+									Фильтр
+								</div>
+								<div class="title__clear">
+									Очистить фильтр
+								</div>
+							</div>
+
+							<div class="menu__object menu">
+								<div class="menu__title">Готовность объекта</div>
+								<div class="menu-item__object">
+									<input type="checkbox" name="object" id="object-1">
+									<label for="object-1" class="object-1">
+										<div></div><span>Сбор документов</span>
+									</label>
+									<input type="checkbox" name="object" id="object-2">
+									<label for="object-2" class="object-2">
+										<div></div><span>Котлован</span>
+									</label>
+									<input type="checkbox" name="object" id="object-3">
+									<label for="object-3" class="object-3">
+										<div></div><span>Цоколь</span>
+									</label>
+									<input type="checkbox" name="object" id="object-4">
+									<label for="object-4" class="object-4">
+										<div></div><span>Первые этажи</span>
+									</label>
+									<input type="checkbox" name="object" id="object-5">
+									<label for="object-5" class="object-5">
+										<div></div><span>Последние этажи</span>
+									</label>
+									<input type="checkbox" name="object" id="object-6">
+									<label for="object-6" class="object-6">
+										<div></div><span>Объект сдан</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="menu__floor menu">
+								<div class="menu__title">Этажность</div>
+								<div class="menu-item__floor">
+									<input type="radio" name="floor" id="floor-1">
+									<label for="floor-1" class="floor-1"><span>1-5</span></label>
+									<input type="radio" name="floor" id="floor-2">
+									<label for="floor-2" class="floor-2"><span>5-10</span></label>
+									<input type="radio" name="floor" id="floor-3">
+									<label for="floor-3" class="floor-3"><span>10-20</span></label>
+									<input type="radio" name="floor" id="floor-4">
+									<label for="floor-4" class="floor-4"><span>20-40</span></label>
+								</div>
+							</div>
+
+							<div class="menu__price-m">
+								<div class="menu__title">Цена за м2</div>
+								<div class="menu-item__price"> <!-- -m -->
+									<div>от<input type="tel" name="price-m"></div>
+									<div>до<input type="tel" name="price-m"></div>
+									<button class="button__menu">Применить</button>
+								</div>
+							</div>
+
+							<div class="menu__price menu">
+								<div class="menu__title">Общая стоимость квартиры, тыс</div>
+								<div class="menu-item__price">
+									<div>от<input type="tel" name="price"></div>
+									<div>до<input type="tel" name="price"></div>
+									<button class="button__menu">Применить</button>
+								</div>
+							</div>
+
+							<div class="menu__rating menu">
+								<div class="menu__title">Рейтинг</div>
+								<div class="menu-item__rating">
+									<input type="radio" name="rating" id="rating-1">
+									<label for="rating-1" class="rating-1"><span>&#9733;</span></label>
+									<input type="radio" name="rating" id="rating-2">
+									<label for="rating-2" class="rating-2"><span>&#9733;&#9733;</span></label>
+									<input type="radio" name="rating" id="rating-3">
+									<label for="rating-3" class="rating-3"><span>&#9733;&#9733;&#9733;</span></label>
+									<input type="radio" name="rating" id="rating-4">
+									<label for="rating-4" class="rating-4"><span>&#9733;&#9733;&#9733;&#9733;</span></label>
+									<input type="radio" name="rating" id="rating-5">
+									<label for="rating-5" class="rating-5"><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="click">
+					<span class="l"></span>
+					<span class="o one"></span>
+					<span class="o two"></span>
+					<span class="o three"></span>
+				</div>
+			</div>
+
+			<div id="map">
+				<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPn4Ox6ZUrcqd-_9_YXT3RXD7O267knAY&callback=initMap"></script>
+			</div>
+
+			<div class="project">
+				<dl><button>О проекте<p></p></button></dl>
+				<dl><button>Блог<p></p></button></dl>
+				<dl><button>Партнеры<p></p></button></dl>
+			</div>
+		</div>
+
+		<!-- JS -->
+		<script src="js/map.js"></script>
+		<script src="js/menu.js"></script>
+	</body>
+</html>
